@@ -1,0 +1,85 @@
+.materialContainer {
+    width: 100%;
+    max-width: 460px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .box, .overbox {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    float: left;
+    padding: 60px 50px 40px 50px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  .title {
+    width: 100%;
+    float: left;
+    line-height: 46px;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ED2553;
+    position: relative;
+  }
+  
+  .input {
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .input label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    line-height: 60px;
+  }
+  
+  .input input {
+    height: 60px;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+  }
+  
+  .button {
+    margin-top: 20px;
+  }
+  
+  .button button {
+    width: 100%;
+    line-height: 64px;
+    background-color: #ED2553;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pass-forgot {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .material-button {
+    position: absolute;
+    top: 40px;
+    right: -70px;
+    width: 140px;
+    height: 140px;
+    background-color: #ED2553;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

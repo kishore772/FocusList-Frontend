@@ -1,0 +1,193 @@
+/* Main layout styles */
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.tasks {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+/* Button styles */
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease; /* Smooth transition for color changes */
+}
+
+.nav-button .button-icon {
+  font-size: 20px;
+}
+
+/* Active state for button */
+.nav-button.active {
+  background-color: #ffffff; /* Background white when active */
+  color: inherit; /* Text and icon use the button's color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add slight shadow when active */
+}
+
+/* Add a subtle hover effect */
+.nav-button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .tasks {
+    padding: 10px;
+  }
+}
+
+
+.auth-container {
+max-width: 400px;
+margin: 50px auto;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+text-align: center;
+}
+
+.auth-container form {
+display: flex;
+flex-direction: column;
+}
+
+.auth-container input {
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.auth-container button {
+padding: 10px;
+border: none;
+background-color: #007bff;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.auth-container .error {
+color: red;
+text-align: center;
+}
+
+/*added*/
+
+.auth-container {
+max-width: 400px;
+margin: 50px auto;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+position: relative;
+padding: 60px 50px 40px 50px;
+background: #fff;
+border-radius: 10px;
+}
+
+.title {
+font-size: 34px;
+font-weight: 700;
+color: #ED2553;
+}
+
+.input {
+margin-top: 30px;
+}
+
+.input input {
+height: 60px;
+border: none;
+background: transparent;
+font-size: 24px;
+color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+margin-top: 30px;
+}
+
+.button button {
+width: 100%;
+line-height: 64px;
+background-color: #ED2553;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+/* Task list container */
+.task-list-container {
+  width: 80%; /* Take up more space */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Task items */
+.task-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for task items */
+}
+
+/* Task item title */
+.task-item h4 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+/* Task item status */
+.task-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+
